@@ -18,10 +18,10 @@ import copy
 import time
 
 import Classes
-
+from selenium.webdriver.common.by import By
 
 def extract_data_toggle(driver):
-    toggles = driver.find_elements_by_xpath("//button[@data-toggle]") 
+    toggles = driver.find_elements(By.XPATH, "//button[@data-toggle]")
     dos = []
     for toggle in toggles:
 
@@ -37,13 +37,13 @@ def extract_data_toggle(driver):
     return dos
 
 def extract_inputs(driver):
-    toggles = driver.find_elements_by_xpath("//input") 
+    toggles = driver.find_elements(By.TAG_NAME, ".//input") 
     dos = []
     for toggle in toggles:
         input_type = toggle.get_attribute("type")
         if (not input_type) or input_type == "text":
 
-            in_form = toggle.find_elements_by_xpath(".//ancestor::form")
+            in_form = toggle.find_elements(By.TAG_NAME,".//ancestor::form")
             if not in_form:
                 xpath = driver.execute_script("return getXPath(arguments[0])", toggle)
                 do = {'function_id': '',
@@ -54,7 +54,7 @@ def extract_inputs(driver):
                       'class': ''}
                 dos.append(do)
 
-    toggles = driver.find_elements_by_xpath("//textarea")
+    toggles = driver.find_elements(By.TAG_NAME, "//textarea")
     for toggle in toggles:
         xpath = driver.execute_script("return getXPath(arguments[0])", toggle)
         do = {'function_id': '',
@@ -70,7 +70,7 @@ def extract_inputs(driver):
 
 
 def extract_fake_buttons(driver):
-    fake_buttons = driver.find_elements_by_class_name("btn") 
+    fake_buttons = driver.find_elements(By.TAG_NAME, "btn") 
     dos = []
     for button in fake_buttons:
 

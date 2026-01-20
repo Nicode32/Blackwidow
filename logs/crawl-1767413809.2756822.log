@@ -1,0 +1,33 @@
+2026-01-03:09:46:50	root	INFO	[Classes.py:484]	Init crawl on https://google.com
+2026-01-03:09:46:50	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:09:46:50	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:09:46:57	root	INFO	[Classes.py:1336]	Current url: https://www.google.com/
+2026-01-03:09:46:57	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:09:46:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:46:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:46:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:46:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:46:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:46:58	root	ERROR	[Classes.py:562]	'WebElement' object has no attribute 'find_elements_by_tag_name'
+2026-01-03:09:46:58	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-03:09:46:58	root	WARNING	[Classes.py:1289]	Falling back to GET
+2026-01-03:09:46:58	root	WARNING	[Classes.py:1289]	Falling back to GET
+2026-01-03:09:46:58	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:09:46:58	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:09:47:00	root	INFO	[Classes.py:1336]	Current url: https://www.google.com/
+2026-01-03:09:47:00	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:09:47:01	root	WARNING	[Classes.py:1405]	Could not execute javascript function in timeout {'function_id': '2bae93d03af9d48878d20cba678041f9', 'function_name': 'ma', 'time': 1414.699999999255}
+2026-01-03:09:47:01	root	WARNING	[Classes.py:1405]	Could not execute javascript function in timeout {'function_id': 'e03ad3488163c103d85747880c44806b', 'function_name': 'a', 'time': 1608.3999999994412}
+2026-01-03:09:47:02	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:47:02	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:47:02	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:47:02	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:47:02	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:09:47:02	root	ERROR	[Classes.py:562]	'WebElement' object has no attribute 'find_elements_by_tag_name'
+2026-01-03:09:47:02	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-03:09:47:02	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[True])-> [get] https://google.com
+2026-01-03:09:47:02	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[True])-> [get] https://google.com
+2026-01-03:09:47:03	root	INFO	[Classes.py:889]	find_state method get
+2026-01-03:09:47:07	root	INFO	[Classes.py:1168]	Starting quick scan to find stored XSS
+2026-01-03:09:47:07	root	INFO	[Classes.py:1175]	-- Checking: https://google.com
+2026-01-03:09:47:08	root	INFO	[Classes.py:1181]	-- Total: set()

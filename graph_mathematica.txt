@@ -1,0 +1,1 @@
+Graph[{"[get] ROOTREQ" -> "[get] https//google.com","[get] ROOTREQ" -> "[get] https/"}, VertexLabels -> All,EdgeLabels -> {("[get] ROOTREQ" -> "[get] https//google.com") -> "get,None",("[get] ROOTREQ" -> "[get] https/") -> "get,None"},EdgeShapeFunction -> GraphElementData["FilledArrow", "ArrowSize" -> 0.005],VertexSize -> 0.1,ImageSize->Scaled[3]  ]

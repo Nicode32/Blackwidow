@@ -30,6 +30,8 @@ from extractors.Forms import extract_forms, parse_form
 from extractors.Urls import extract_urls
 from extractors.Iframes import extract_iframes
 from extractors.Ui_forms import extract_ui_forms
+from selenium.webdriver.common.by import By
+
 
 
 import logging
@@ -632,7 +634,7 @@ class Crawler:
             driver.get(attack_vector)
 
             # Inspect
-            successful_xss = successful_xss.union( self.inspect_attack(url) )
+            successful_xss = successful_xss.union( self.inspect_attack(self.url) )
 
         return successful_xss
 
@@ -657,7 +659,7 @@ class Crawler:
 
             try:
                 if  event.event == "oninput" or event.event == "input":
-                    el = driver.find_element_by_xpath(event.addr)
+                
                     el.clear()
                     el.send_keys(payload)
                     el.send_keys(Keys.RETURN)
@@ -828,7 +830,7 @@ class Crawler:
         successful_xss = set()
 
         # attribute injections
-        attribute_injects = self.driver.find_elements_by_xpath("//*[@jaekpot-attribute]")
+        attribute_injects = self.driver.find_elements(By.XPATH, "//*[@jaekpot-attribute]")
         for attribute in attribute_injects:
             lookup_id = attribute.get_attribute("jaekpot-attribute")
             successful_xss.add(lookup_id)

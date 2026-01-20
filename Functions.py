@@ -30,16 +30,18 @@ from extractors.Iframes import extract_iframes
 
 
 # From: https://stackoverflow.com/a/47298910
-def send(driver, cmd, params={}):
-  resource = "/session/%s/chromium/send_command_and_get_result" % driver.session_id
-  url = driver.command_executor._url + resource
-  body = json.dumps({'cmd': cmd, 'params': params})
-  response = driver.command_executor._request('POST', url, body)
-  if "status" in response:
-    logging.error(response)
+
+
 
 def add_script(driver, script):
-  send(driver, "Page.addScriptToEvaluateOnNewDocument", {"source": script})
+    if not script:
+        return
+
+    driver.execute_cdp_cmd(
+        "Page.addScriptToEvaluateOnNewDocument",
+        {"source": script}
+    )
+
 
 
 # Changes the address from the row to the first cell

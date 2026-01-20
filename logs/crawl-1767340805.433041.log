@@ -1,0 +1,33 @@
+2026-01-02:13:30:11	root	INFO	[Classes.py:484]	Init crawl on https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:11	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:11	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:17	root	INFO	[Classes.py:1336]	Current url: https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:17	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:18	root	WARNING	[Classes.py:1405]	Could not execute javascript function in timeout {'function_id': 'f25a6ab2e64141130d1fa4ae9512c75f', 'function_name': 'qB', 'time': 0}
+2026-01-02:13:30:18	root	ERROR	[Classes.py:562]	Object of type ellipsis is not JSON serializable
+2026-01-02:13:30:18	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-02:13:30:18	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/
+2026-01-02:13:30:18	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/
+2026-01-02:13:30:19	root	INFO	[Classes.py:1336]	Current url: https://crawler-test.com/mobile/
+2026-01-02:13:30:19	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/
+2026-01-02:13:30:19	root	ERROR	[Classes.py:562]	Object of type ellipsis is not JSON serializable
+2026-01-02:13:30:19	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-02:13:30:19	root	WARNING	[Classes.py:1289]	Falling back to GET
+2026-01-02:13:30:19	root	WARNING	[Classes.py:1289]	Falling back to GET
+2026-01-02:13:30:19	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:19	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:19	root	INFO	[Classes.py:1336]	Current url: https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:19	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:20	root	WARNING	[Classes.py:1405]	Could not execute javascript function in timeout {'function_id': 'f25a6ab2e64141130d1fa4ae9512c75f', 'function_name': 'qB', 'time': 0}
+2026-01-02:13:30:20	root	ERROR	[Classes.py:562]	Object of type ellipsis is not JSON serializable
+2026-01-02:13:30:20	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-02:13:30:20	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[True])-> [get] https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:20	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[True])-> [get] https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:21	root	INFO	[Classes.py:889]	find_state method get
+2026-01-02:13:30:21	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/
+2026-01-02:13:30:21	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://crawler-test.com/mobile/
+2026-01-02:13:30:22	root	INFO	[Classes.py:889]	find_state method get
+2026-01-02:13:30:23	root	INFO	[Classes.py:1168]	Starting quick scan to find stored XSS
+2026-01-02:13:30:23	root	INFO	[Classes.py:1175]	-- Checking: https://crawler-test.com/mobile/responsive
+2026-01-02:13:30:23	root	INFO	[Classes.py:1175]	-- Checking: https://crawler-test.com/mobile/
+2026-01-02:13:30:24	root	INFO	[Classes.py:1181]	-- Total: set()

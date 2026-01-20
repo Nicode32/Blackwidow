@@ -1,0 +1,61 @@
+2026-01-03:10:19:47	root	INFO	[Classes.py:484]	Init crawl on https://google.com
+2026-01-03:10:19:47	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:10:19:47	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:10:19:53	root	INFO	[Classes.py:1336]	Current url: https://www.google.com/
+2026-01-03:10:19:53	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:10:19:54	root	ERROR	[Forms.py:56]	Unknown exception in inputs
+2026-01-03:10:19:54	root	WARNING	[Forms.py:64]	No inputs founds during parse, falling back to JavaScript
+2026-01-03:10:19:54	root	INFO	[Forms.py:74]	Found js form: Form(0, https://www.google.com/search, get)
+2026-01-03:10:19:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:19:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:19:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:19:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:19:58	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:00	root	DEBUG	[Urls.py:123]	URLs from extract_urls {[get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCCE, [get] https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCCI, [get] https://google.com/search/howsearchworks/?fg=1, [get] https://www.google.com/imghp?hl=en&ogbl, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCCM, [get] https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCCU, [get] https://www.google.co.in/intl/en/about/products, [get] https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCCY, [get] https://www.google.com/advanced_search?hl=en-IN&fg=1, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCCA, [get] https://policies.google.com/privacy?hl=en-IN&fg=1, [get] https://www.google.com/preferences?hl=en-IN&fg=1, [get] https://www.google.com/history/optout?hl=en-IN&fg=1, [get] https://www.google.com/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1&cctld=com, [get] https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCCQ, [get] https://mail.google.com/mail/&ogbl, [get] https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCB8, [get] https://policies.google.com/terms?hl=en-IN&fg=1, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwjcrK3yyO6RAxWXPhAIHZtMLSMQ2ZgBCCc, [get] https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header}
+2026-01-03:10:20:00	root	ERROR	[Forms.py:56]	Unknown exception in inputs
+2026-01-03:10:20:00	root	WARNING	[Forms.py:64]	No inputs founds during parse, falling back to JavaScript
+2026-01-03:10:20:00	root	INFO	[Forms.py:74]	Found js form: Form(0, https://www.google.com/search, get)
+2026-01-03:10:20:05	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:06	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:06	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:06	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:06	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:06	root	INFO	[Functions.py:835]	set_form_values got 1
+2026-01-03:10:20:06	root	INFO	[Functions.py:848]	set_form_values returned 2
+2026-01-03:10:20:06	root	ERROR	[Classes.py:562]	'WebElement' object is not iterable
+2026-01-03:10:20:06	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-03:10:20:06	root	WARNING	[Classes.py:1289]	Falling back to GET
+2026-01-03:10:20:06	root	WARNING	[Classes.py:1289]	Falling back to GET
+2026-01-03:10:20:06	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:10:20:06	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:10:20:08	root	INFO	[Classes.py:1336]	Current url: https://www.google.com/
+2026-01-03:10:20:08	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-03:10:20:09	root	WARNING	[Classes.py:1405]	Could not execute javascript function in timeout {'function_id': '2bae93d03af9d48878d20cba678041f9', 'function_name': 'ma', 'time': 1462.1000000005588}
+2026-01-03:10:20:09	root	WARNING	[Classes.py:1405]	Could not execute javascript function in timeout {'function_id': 'e03ad3488163c103d85747880c44806b', 'function_name': 'a', 'time': 1646.7000000001863}
+2026-01-03:10:20:09	root	ERROR	[Forms.py:56]	Unknown exception in inputs
+2026-01-03:10:20:09	root	WARNING	[Forms.py:64]	No inputs founds during parse, falling back to JavaScript
+2026-01-03:10:20:09	root	INFO	[Forms.py:74]	Found js form: Form(0, https://www.google.com/search, get)
+2026-01-03:10:20:10	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:10	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:10	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:10	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:10	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:10	root	DEBUG	[Urls.py:123]	URLs from extract_urls {[get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCCA, [get] https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCCI, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCCQ, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCCc, [get] https://google.com/search/howsearchworks/?fg=1, [get] https://www.google.com/imghp?hl=en&ogbl, [get] https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1, [get] https://www.google.co.in/intl/en/about/products, [get] https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCCU, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCCY, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCB8, [get] https://www.google.com/advanced_search?hl=en-IN&fg=1, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCCM, [get] https://policies.google.com/privacy?hl=en-IN&fg=1, [get] https://www.google.com/setprefs?sig=0_asqNJgyCfvZvBwQNCzRq0MNQy5A%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiq2Y76yO6RAxVcd2wGHS-nCPQQ2ZgBCCE, [get] https://www.google.com/preferences?hl=en-IN&fg=1, [get] https://www.google.com/history/optout?hl=en-IN&fg=1, [get] https://www.google.com/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1&cctld=com, [get] https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1, [get] https://mail.google.com/mail/&ogbl, [get] https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1, [get] https://policies.google.com/terms?hl=en-IN&fg=1, [get] https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header}
+2026-01-03:10:20:10	root	ERROR	[Forms.py:56]	Unknown exception in inputs
+2026-01-03:10:20:10	root	WARNING	[Forms.py:64]	No inputs founds during parse, falling back to JavaScript
+2026-01-03:10:20:10	root	INFO	[Forms.py:74]	Found js form: Form(0, https://www.google.com/search, get)
+2026-01-03:10:20:13	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:13	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:13	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:13	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:13	root	ERROR	[Classes.py:341]	Unknown button ('button', '', '')
+2026-01-03:10:20:13	root	INFO	[Functions.py:835]	set_form_values got 1
+2026-01-03:10:20:13	root	INFO	[Functions.py:848]	set_form_values returned 2
+2026-01-03:10:20:13	root	ERROR	[Classes.py:562]	'WebElement' object is not iterable
+2026-01-03:10:20:13	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-03:10:20:13	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[True])-> [get] https://google.com
+2026-01-03:10:20:13	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[True])-> [get] https://google.com
+2026-01-03:10:20:15	root	INFO	[Classes.py:889]	find_state method get
+2026-01-03:10:20:16	root	INFO	[Classes.py:1168]	Starting quick scan to find stored XSS
+2026-01-03:10:20:16	root	INFO	[Classes.py:1175]	-- Checking: https://google.com
+2026-01-03:10:20:18	root	INFO	[Classes.py:1181]	-- Total: set()

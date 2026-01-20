@@ -16,7 +16,7 @@ import re
 import logging
 import copy
 import time
-
+from selenium.webdriver.common.by import By
 import Classes
 
 # If the url is from a form then the form method is used
@@ -39,7 +39,8 @@ def extract_urls(driver):
     urls = set()
 
     # Search for urls in <a>
-    elem = driver.find_elements_by_tag_name("a")
+    elem = driver.find_elements(By.TAG_NAME, "a")
+
     for el in elem:
         try:
             if el.get_attribute("href"):
@@ -66,7 +67,8 @@ def extract_urls(driver):
             print(traceback.format_exc())
 
     # Search for urls in <iframe>
-    elem = driver.find_elements_by_tag_name("iframe")
+    
+    elem = driver.find_elements(By.TAG_NAME, "iframe")
     for el in elem:
         try:
             if el.get_attribute("src"):
@@ -79,7 +81,7 @@ def extract_urls(driver):
             print(traceback.format_exc())
 
     # Search for urls in <meta>
-    elem = driver.find_elements_by_tag_name("meta")
+    elem = driver.find_elements(By.TAG_NAME, "meta")
     for el in elem:
         try:
             

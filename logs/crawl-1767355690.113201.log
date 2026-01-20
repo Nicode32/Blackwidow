@@ -1,0 +1,29 @@
+2026-01-02:17:38:15	root	INFO	[Classes.py:484]	Init crawl on https://google.com
+2026-01-02:17:38:15	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-02:17:38:15	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-02:17:38:20	root	INFO	[Classes.py:1336]	Current url: https://www.google.com/
+2026-01-02:17:38:20	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-02:17:38:21	root	ERROR	[Forms.py:50]	Unknown exception in inputs
+2026-01-02:17:38:21	root	WARNING	[Forms.py:58]	No inputs founds during parse, falling back to JavaScript
+2026-01-02:17:38:21	root	INFO	[Forms.py:68]	Found js form: Form(0, https://www.google.com/search, get)
+2026-01-02:17:38:21	root	ERROR	[Classes.py:562]	'WebDriver' object has no attribute 'find_element_by_xpath'
+2026-01-02:17:38:21	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-02:17:38:21	root	WARNING	[Classes.py:1289]	Falling back to GET
+2026-01-02:17:38:21	root	WARNING	[Classes.py:1289]	Falling back to GET
+2026-01-02:17:38:21	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-02:17:38:21	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-02:17:38:23	root	INFO	[Classes.py:1336]	Current url: https://www.google.com/
+2026-01-02:17:38:23	root	INFO	[Classes.py:1337]	Crawl (edge): [get] ROOTREQ -(get None[False])-> [get] https://google.com
+2026-01-02:17:38:24	root	WARNING	[Classes.py:1405]	Could not execute javascript function in timeout {'function_id': '2bae93d03af9d48878d20cba678041f9', 'function_name': 'ma', 'time': 1340.800000000745}
+2026-01-02:17:38:24	root	WARNING	[Classes.py:1405]	Could not execute javascript function in timeout {'function_id': 'e03ad3488163c103d85747880c44806b', 'function_name': 'a', 'time': 1528.300000000745}
+2026-01-02:17:38:24	root	ERROR	[Forms.py:50]	Unknown exception in inputs
+2026-01-02:17:38:24	root	WARNING	[Forms.py:58]	No inputs founds during parse, falling back to JavaScript
+2026-01-02:17:38:24	root	INFO	[Forms.py:68]	Found js form: Form(0, https://www.google.com/search, get)
+2026-01-02:17:38:24	root	ERROR	[Classes.py:562]	'WebDriver' object has no attribute 'find_element_by_xpath'
+2026-01-02:17:38:24	root	ERROR	[Classes.py:564]	Top level error while crawling
+2026-01-02:17:38:24	root	INFO	[Functions.py:165]	Check edge: [get] ROOTREQ -(get None[True])-> [get] https://google.com
+2026-01-02:17:38:24	root	INFO	[Functions.py:209]	Follow edge: [get] ROOTREQ -(get None[True])-> [get] https://google.com
+2026-01-02:17:38:26	root	INFO	[Classes.py:889]	find_state method get
+2026-01-02:17:38:27	root	INFO	[Classes.py:1168]	Starting quick scan to find stored XSS
+2026-01-02:17:38:27	root	INFO	[Classes.py:1175]	-- Checking: https://google.com
+2026-01-02:17:38:28	root	INFO	[Classes.py:1181]	-- Total: set()
