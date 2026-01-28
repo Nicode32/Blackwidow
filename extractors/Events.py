@@ -88,16 +88,35 @@ def extract_fake_buttons(driver):
 
 def extract_events(driver):
     # Use JavaScript to find events
-    resps = driver.execute_script("return catch_properties()")
-    todo = json.loads(resps)
+    todo = []
+    try:
+        resps = driver.execute_script("return catch_properties()")
+        if resps:
+            try:
+                todo = json.loads(resps)
+            except Exception:
+                logging.exception("Failed to parse catch_properties response")
+                todo = []
+    except Exception:
+        logging.exception("catch_properties() JS failed")
 
     # From event listeners
-    resps = driver.execute_script("return JSON.stringify(added_events)")
-    todo += json.loads(resps)
+    try:
+        resps = driver.execute_script("return JSON.stringify(added_events)")
+        if resps:
+            try:
+                todo += json.loads(resps)
+            except Exception:
+                logging.exception("Failed to parse added_events response")
+    except Exception:
+        logging.exception("added_events JS failed")
 
     # From data-toggle
-    resps = extract_data_toggle(driver)
-    todo += resps
+    try:
+        resps = extract_data_toggle(driver)
+        todo += resps
+    except Exception:
+        logging.exception("extract_data_toggle failed")
 
 
     # Only works in Chrome DevTools
@@ -105,11 +124,17 @@ def extract_events(driver):
     # todo += resps
 
     # From fake buttons class="btn"
-    resps = extract_fake_buttons(driver)
-    todo += resps
+    try:
+        resps = extract_fake_buttons(driver)
+        todo += resps
+    except Exception:
+        logging.exception("extract_fake_buttons failed")
 
-    resps = extract_inputs(driver)
-    todo += resps
+    try:
+        resps = extract_inputs(driver)
+        todo += resps
+    except Exception:
+        logging.exception("extract_inputs failed")
 
     #for do in todo:
     #    print(do)

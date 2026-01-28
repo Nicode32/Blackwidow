@@ -8,8 +8,9 @@ from selenium.common.exceptions import (StaleElementReferenceException,
                                        NoAlertPresentException,
                                        WebDriverException,
                                        InvalidElementStateException
+                                       
                                        )
-
+from selenium.common.exceptions import NoAlertPresentException
 from urllib.parse import urlparse, urljoin
 import json
 import pprint
@@ -631,7 +632,8 @@ class Crawler:
             purl = purl._replace( path="/".join(parts) )
             attack_vector = purl.geturl()
 
-            driver.get(attack_vector)
+            if not safe_get(driver, attack_vector):
+                logging.warning("attack_404: safe_get failed for %s" % attack_vector)
 
             # Inspect
             successful_xss = successful_xss.union( self.inspect_attack(self.url) )
@@ -723,7 +725,8 @@ class Crawler:
                     attack_vector = vector.replace(purl.query, attack_query)
                     print("--Attack vector: ", attack_vector)
 
-                    driver.get(attack_vector)
+                    if not safe_get(driver, attack_vector):
+                        logging.warning("attack_get: safe_get failed for %s" % attack_vector)
 
                     # Inspect
                     inspect_result =  self.inspect_attack(vector)
@@ -889,7 +892,9 @@ class Crawler:
             logging.info("find_state method %s" % method)
             if method == "get":
                 if allow_edge(graph, edge_in_path ):
-                    driver.get(edge_in_path.n2.value.url)
+                    if not safe_get(driver, edge_in_path.n2.value.url):
+                        logging.warning("execute_path: safe_get failed for %s" % edge_in_path.n2.value.url)
+                        return False
                     self.inspect_attack(edge_in_path)
                 else:
                     logging.warning("Not allowed to get: " + str(edge_in_path.n2.value.url))
@@ -1089,7 +1094,9 @@ class Crawler:
         successful_xss = set()
 
         vectors = self.extract_vectors()
-
+        driver = self.driver
+        if not safe_get(driver, self.url):
+            logging.warning("attack(): could not open initial URL %s" % self.url)
         pprint.pprint(vectors)
 
         # Look for trackers (Double crawl)
@@ -1173,10 +1180,11 @@ class Crawler:
         for (vector_type, url) in vectors:
             if vector_type == "get":
                 logging.info("-- Checking: " + str(url))
-                driver.get(url)
-
-                # Inspect
-                successful_xss = successful_xss.union( self.inspect_attack(url) )
+                if not safe_get(driver, url):
+                    logging.warning("quick_check_xss: safe_get failed for %s" % url)
+                else:
+                    # Inspect
+                    successful_xss = successful_xss.union( self.inspect_attack(url) )
 
         logging.info("-- Total: " + str(successful_xss))
         return successful_xss
@@ -1433,7 +1441,7 @@ class Crawler:
             wait_json = driver.execute_script("return JSON.stringify(need_to_wait)")
         except UnexpectedAlertPresentException:
             logging.warning("Alert detected")
-            alert = driver.switch_to_alert()
+            alert = driver.switch_to.alert
             alert.dismiss()
         wait_json = driver.execute_script("return JSON.stringify(need_to_wait)")
         wait = json.loads(wait_json)
@@ -1503,7 +1511,7 @@ class Crawler:
 
         # Try to clean up alerts
         try:
-            alert = driver.switch_to_alert()
+            alert = driver.switch_to.alert
             alert.dismiss()
         except NoAlertPresentException:
             pass
